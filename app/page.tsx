@@ -40,7 +40,7 @@ export default function HomePage() {
 
   // Counter animation
   useEffect(() => {
-    const targets = { listings: 3842, sellers: 1247, feedback: 98 }
+    const targets = { listings: 0, sellers: 0, feedback: 0 }
     const duration = 1600
     const start = performance.now()
 
@@ -101,18 +101,18 @@ export default function HomePage() {
               Søg
             </button>
           </form>
-          <div className="hero-stats" role="list" aria-label="Platformstatistik">
+          <div className="hero-stats" role="list" aria-label="Platforminfo">
             <div role="listitem">
-              <div className="hero-stat-num"><span className="count-up">{counters.listings.toLocaleString('da-DK')}</span>+</div>
-              <div className="hero-stat-label">Aktive annoncer</div>
+              <div className="hero-stat-num">100%</div>
+              <div className="hero-stat-label">Fokus på autenticitet</div>
             </div>
             <div role="listitem">
-              <div className="hero-stat-num"><span className="count-up">{counters.sellers.toLocaleString('da-DK')}</span></div>
-              <div className="hero-stat-label">Verificerede sælgere</div>
+              <div className="hero-stat-num">Gratis</div>
+              <div className="hero-stat-label">At oprette annonce</div>
             </div>
             <div role="listitem">
-              <div className="hero-stat-num"><span className="count-up">{counters.feedback}</span>%</div>
-              <div className="hero-stat-label">Positiv feedback</div>
+              <div className="hero-stat-num">Ny</div>
+              <div className="hero-stat-label">Platform – vær med fra starten</div>
             </div>
           </div>
         </div>
